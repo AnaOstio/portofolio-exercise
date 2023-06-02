@@ -11,7 +11,6 @@ body {
 }
 
 header{
-   grid-area: header;
    display: flex; 
    justify-content: space-evenly;
    align-items: center;
@@ -93,28 +92,41 @@ nav a:last-child {
 
 @media (max-width: 768px) {
 
-   #contact {
-      display: flex;
-      flex-direction: row;
-      height: 100vh;
-   }
+   
 
-   #about {
-      display: flex;
-      flex-direction: column;
-      margin-top: 100px;
-   }
+  body {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
 
-   #me {
-      display: flex;
-      flex-direction: column;
-   }
+  img{
+   width: 30%;
+   height: auto;
+  }
+  
+  #contact {
+   display: flex;
+   flex-direction: row;
+  }
 
-   #information-section{
-      margin: none;
-   }
+  header{
+   display: flex; 
+   justify-content: space-evenly;
+   align-items: center;
+  }
 
-   #collegue {
-      margin-top: 140px;
-   }
+  #me{
+   display: flex;
+   flex-direction: column;
+ }
+
+ #me h3 {
+   font-size: 40px;
+   margin: 0%;
+ }
+
+ main {
+   margin: 0%;
+ }
 }
