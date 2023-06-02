@@ -7,6 +7,7 @@ footer {
 body {
    color: violet;
    background-color: #120a0f;
+   font-family: 'Inconsolata', monospace;
 }
 
 header{
@@ -101,10 +102,19 @@ nav a:last-child {
    #about {
       display: flex;
       flex-direction: column;
+      margin-top: 100px;
    }
 
    #me {
       display: flex;
       flex-direction: column;
+   }
+
+   #information-section{
+      margin: none;
+   }
+
+   #collegue {
+      margin-top: 140px;
    }
 }
