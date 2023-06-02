@@ -65,7 +65,7 @@ nav a:last-child {
    margin: 1rem 0;
 }
 
-#contact {
+#contact, #about{
    height: 50vh;
    display: flex;
    flex-direction: column;
@@ -74,6 +74,21 @@ nav a:last-child {
   
 }
 
+#me {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+#me h3 {
+   font-size: 60px;
+}
+
+
+#information-section {
+   margin-left: 30px;
+}
 
 @media (max-width: 768px) {
 
@@ -81,5 +96,15 @@ nav a:last-child {
       display: flex;
       flex-direction: row;
       height: 100vh;
+   }
+
+   #about {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #me {
+      display: flex;
+      flex-direction: column;
    }
 }
