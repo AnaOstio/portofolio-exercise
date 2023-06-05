@@ -2,10 +2,12 @@ html {
    scroll-behavior: smooth;
 }
 
+a {
+   color: white;
+}
+
 footer {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+   text-align: center;
 }
 
 body {
@@ -123,7 +125,7 @@ img {
    width: 300px; /* Ajusta el ancho del círculo */
    height: 300px; /* Ajusta la altura del círculo */
    border-radius: 50%;
-   margin-left: 250px;
+   margin-left: 200px;
 }
 
 .titulo {
@@ -143,24 +145,36 @@ img {
    padding-top: 120px;
 }
 
-.college h2, .college span {
+.hoobies {
+   display: grid;
+   grid-template-areas: 'lista  icono'
+                         'lista titulo';
+    padding: 60px;
+ }
+ 
+
+.college h2, .college span, .hoobies h2, .hoobies span {
    display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 150px;
+   align-items: center;
+   justify-content: flex-end;
+   margin-right: 150px;
 }
 
-.college h2 {
+.college h2, .hoobies h2 {
    grid-area: titulo;
 }
 
-.college span {
+.college span, .hoobies span {
    grid-area: icono;
    font-size: 100px;
 }
 
-.college ul {
+.college ul, .hoobies ul {
    grid-area: lista;
+}
+
+.hoobies ul {
+   margin-left: 30px ;
 }
 
 .college ul li:nth-child(even) {
@@ -180,12 +194,14 @@ img {
 
 @media (max-width: 1000px) {   
 
-   .college {
+   .college, .hoobies {
       display: flex;
       flex-direction: column;
+      padding-top: 5px;
+      padding: 25px;
    }
 
-   .college h2, .college span {
+   .college h2, .college span,  .hoobies h2, .hoobies span{
       margin-right: 0;
       justify-content: center;
    }
@@ -222,6 +238,7 @@ img {
  #me h3 {
    font-size: 40px;
    margin: 0%;
+   margin-top: 15px;
  }
 
  main {
