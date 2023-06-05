@@ -35,6 +35,7 @@ nav a:last-child {
 
 #contact {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    flex-wrap: wrap;
    text-align: center;
@@ -67,7 +68,7 @@ nav a:last-child {
    margin: 1rem 0;
 }
 
-#contact, #about{
+#about{
    height: 50vh;
    display: flex;
    flex-direction: column;
@@ -96,6 +97,56 @@ img {
    height: 300px; /* Ajusta la altura del círculo */
    border-radius: 50%;
    margin-left: 250px;
+}
+
+.titulo {
+   display: block;
+   white-space: nowrap;
+   border-right: 4px solid;
+   width: 13ch;
+   animation: typing 2s steps(13), blink .5s infinite step-end alternate;
+   overflow: hidden;
+}
+
+.college {
+  display: grid;
+  grid-template-areas: 'titulo lista'
+                        'icono lista';
+}
+
+.college h2, .college span {
+   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 300px;
+}
+
+.college h2 {
+   grid-area: titulo;
+}
+
+.college span {
+   grid-area: icono;
+   font-size: 100px;
+}
+
+.college ul {
+   grid-area: lista;
+}
+
+.college ul li:nth-child(even) {
+   color: #D8BFD8;
+   font-size: 14px;
+   list-style-type: none;
+   margin-bottom: 20px;
+}
+
+@keyframes typing {
+   from { width: 0;}
+}
+
+@keyframes blink {
+   50% {border-color: transparent}
 }
 
 @media (max-width: 1000px) {   
