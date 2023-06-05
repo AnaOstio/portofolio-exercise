@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 footer {
    display: flex;
    flex-direction: row;
@@ -33,23 +37,28 @@ nav a:last-child {
    line-height: .5;
 }
 
-#contact {
+#contact,  .technologies {
    display: flex;
    flex-direction: column;
    justify-content: center;
    flex-wrap: wrap;
    text-align: center;
    padding: 30px;
+   background-color: #DDA0DD	;
 }
 
-#content-boxes {
+.contact h2, .technologies h2 {
+   color: black;
+}
+
+#content-boxes, .content-boxes-tec {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    text-align: center;
 }
 
-#content-boxes #box {
+#content-boxes #box{
    height: 15rem;
    width: 17rem;
    background: #101010;
@@ -57,6 +66,24 @@ nav a:last-child {
    border-radius: 1rem;
    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
    margin: 2rem;
+}
+
+.content-boxes-tec #box{
+   height: 15rem;
+   width: 17rem;
+   background: #101010;
+   text-align: center;
+   border-radius: 1rem;
+   box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+   margin: 2rem;
+}
+
+.content-boxes-tec #box i {
+   line-height: 9rem;
+   text-align: center;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 5rem;
 }
 
 #content-boxes #box i {
@@ -112,13 +139,15 @@ img {
   display: grid;
   grid-template-areas: 'titulo lista'
                         'icono lista';
+   padding: 60px;
+   padding-top: 120px;
 }
 
 .college h2, .college span {
    display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 300px;
+  margin-right: 150px;
 }
 
 .college h2 {
@@ -150,6 +179,16 @@ img {
 }
 
 @media (max-width: 1000px) {   
+
+   .college {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .college h2, .college span {
+      margin-right: 0;
+      justify-content: center;
+   }
 
   body {
    display: flex;
