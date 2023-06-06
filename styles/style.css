@@ -205,13 +205,7 @@ img {
    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
 }
 
-.face i, .face span {
-   line-height: 9rem;
-   text-align: center;
-   border-radius: 50%;
-   color: #fff;
-   font-size: 5rem;
-}
+
 
 .front {
    transform: rotateY(0deg);
@@ -227,6 +221,14 @@ img {
 
 .content-boxes-tec:hover .back {
    transform: perspective(700px) rotateY(360deg);
+}
+
+.face i, .face span {
+   line-height: 9rem;
+   text-align: center;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 5rem;
 }
 
 @keyframes typing {
