@@ -119,7 +119,7 @@ img {
    width: 300px; /* Ajusta el ancho del círculo */
    height: 300px; /* Ajusta la altura del círculo */
    border-radius: 50%;
-   margin-left: 200px;
+   margin-right: 70px;
 }
 
 .titulo {
