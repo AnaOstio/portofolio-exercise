@@ -80,13 +80,7 @@ nav a:last-child {
    margin: 2rem;
 }
 
-.content-boxes-tec #box i {
-   line-height: 9rem;
-   text-align: center;
-   border-radius: 50%;
-   color: #fff;
-   font-size: 5rem;
-}
+
 
 #content-boxes #box i {
    line-height: 3rem;
@@ -177,11 +171,63 @@ img {
    margin-left: 30px ;
 }
 
+.hoobies ul li:nth-child(even) {
+   color: #D8BFD8;
+}
+
 .college ul li:nth-child(even) {
    color: #D8BFD8;
    font-size: 14px;
    list-style-type: none;
    margin-bottom: 20px;
+}
+
+.card {
+   position: relative;
+   height: 15rem;
+   width: 17rem;
+   text-align: center;
+   margin: 20px;
+}
+
+.face {
+   position: absolute;
+   height: 15rem;
+   width: 17rem;
+   backface-visibility: hidden;
+   overflow: hidden;
+   transition: all 0.5s ease-in-out 0s;
+   justify-content: center;
+   align-items: center;
+   color: violet;
+   background: #101010;
+   border-radius: 1rem;
+   box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+   margin: 2rem;
+}
+
+.face i, .face span {
+   line-height: 9rem;
+   text-align: center;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 5rem;
+}
+
+.front {
+   transform: rotateY(0deg);
+}
+
+.back {
+   transform: rotateY(180deg);
+}
+
+.content-boxes-tec:hover .front {
+   transform: perspective(700px) rotateY(180deg);
+}
+
+.content-boxes-tec:hover .back {
+   transform: perspective(700px) rotateY(360deg);
 }
 
 @keyframes typing {
@@ -199,6 +245,10 @@ img {
       flex-direction: column;
       padding-top: 5px;
       padding: 25px;
+   }
+
+   .hoobies {
+      padding-left: 0;
    }
 
    .college h2, .college span,  .hoobies h2, .hoobies span{
