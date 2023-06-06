@@ -39,7 +39,7 @@ nav a:last-child {
    line-height: .5;
 }
 
-#contact,  .technologies {
+.contact,  .technologies {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -53,14 +53,14 @@ nav a:last-child {
    color: black;
 }
 
-#content-boxes, .content-boxes-tec {
+.content-boxes, .content-boxes-tec {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    text-align: center;
 }
 
-#content-boxes #box{
+.content-boxes .box{
    height: 15rem;
    width: 17rem;
    background: #101010;
@@ -70,7 +70,7 @@ nav a:last-child {
    margin: 2rem;
 }
 
-.content-boxes-tec #box{
+.content-boxes-tec .box{
    height: 15rem;
    width: 17rem;
    background: #101010;
@@ -82,7 +82,7 @@ nav a:last-child {
 
 
 
-#content-boxes #box i {
+.content-boxes .box i {
    line-height: 3rem;
    text-align: center;
    border-radius: 50%;
@@ -91,7 +91,7 @@ nav a:last-child {
    margin: 1rem 0;
 }
 
-#about{
+.about{
    height: 50vh;
    display: flex;
    flex-direction: column;
@@ -99,19 +99,19 @@ nav a:last-child {
    align-items: center;
 }
 
-#me {
+.me {
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: center;
 }
 
-#me h3 {
+.me h3 {
    font-size: 60px;
 }
 
 
-#information-section {
+.information-section {
    margin-left: 30px;
 }
 
@@ -267,7 +267,7 @@ img {
    margin: auto;
   }
   
-  #contact {
+  .contact {
    display: flex;
    flex-direction: column;
    height: 1000px;
@@ -279,7 +279,7 @@ img {
    align-items: center;
   }
 
-  #me, #content-boxes{
+  #me, .content-boxes{
    display: flex;
    flex-direction: column;
  }
