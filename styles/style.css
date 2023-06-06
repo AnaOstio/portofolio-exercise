@@ -60,7 +60,7 @@ nav a:last-child {
    text-align: center;
 }
 
-.content-boxes .box{
+.box{
    height: 15rem;
    width: 17rem;
    background: #101010;
@@ -279,12 +279,12 @@ img {
    align-items: center;
   }
 
-  #me, .content-boxes{
+  .me, .content-boxes{
    display: flex;
    flex-direction: column;
  }
 
- #me h3 {
+ .me h3 {
    font-size: 40px;
    margin: 0%;
    margin-top: 15px;
