@@ -143,25 +143,19 @@ img {
 .hoobies {
   display: grid;
   grid-template-areas:
-    "lista  icono"
-    "lista titulo";
+    "titulo lista"
+    "icono lista";
   padding: 60px;
 }
 
 .college h2,
-.college span {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 150px;
-}
-
+.college span,
 .hoobies h2,
 .hoobies span {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 500px;
+  margin-right: 150px;
 }
 
 .college h2,
@@ -178,10 +172,6 @@ img {
 .college ul,
 .hoobies ul {
   grid-area: lista;
-}
-
-.hoobies ul {
-  margin-left: 350px;
 }
 
 .hoobies ul li:nth-child(even) {
