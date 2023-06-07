@@ -17,5 +17,5 @@ I have checked that my website complies with the following validators:
 In some cases it may be necessary to enter the URL of the displayed site, for this purpose, I leave the link below.
 
 ```
-    https://anaostio.github.io/portofolio-exercise/
+https://anaostio.github.io/portofolio-exercise/
 ```
